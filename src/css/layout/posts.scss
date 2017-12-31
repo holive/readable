@@ -1,0 +1,166 @@
+.sort-button {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+}
+
+li.MuiButtonBase-root-16 {
+   color: rgba(0, 0, 0, .7);
+   height: 11px;
+   font-size: 14px;
+}
+
+#sort-by {
+   .title {
+      &:focus {
+         background-color: transparent;
+      }
+   }
+}
+
+.posts {
+   .container {
+      display: flex;
+   }
+
+   .content{
+      margin-top: 6px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+}
+
+.post-box {
+   width: calc(50% - 15px);
+   background-color: #fff;
+   border-radius: 2px;
+   padding: 25px;
+   margin-bottom: 30px;
+   opacity: 1;
+   transition: all ease-out 0.2s, opacity ease-out 0.3s;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   @include sombra-padrao;
+
+   &.fade-out {
+      opacity: 0;
+   }
+
+   &.hidden {
+      display: none;
+   }
+
+   &:hover {
+      @include sombra-padrao-hover; 
+   }
+   
+   h3 {
+      font-weight: 300;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #222;
+      text-decoration: none;
+   }
+
+   &>a {
+      color: #222;
+      text-decoration: none;
+   }
+
+   .details {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 30px;
+      pointer-events: none;
+   }
+
+   .name {
+      font-weight: 500;
+   }
+
+   .comments-counter {
+      opacity: 0.7;
+   }
+
+   .bottom {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .edit {
+      opacity: 0.7;
+      
+      a {
+         font-size: 14px;
+         cursor: pointer;
+      }
+   }
+
+   .like {
+      display: flex;
+
+      .thumb {
+         width: 20px;
+         height: 20px;
+         opacity: 0.5;
+         cursor: pointer;
+      }
+
+      .down {
+         position: relative;
+         top: 4px;
+      }
+
+      .number {
+         margin: 0 6px 0 5px;
+         color: #00bcd4;
+         pointer-events: none;
+      }
+
+      .negative {
+         color: #b4b4b4;
+      }
+   }
+}
+
+// .post
+.post {
+   .post-box {
+      width: 100%;
+
+      &:hover {
+         @include sombra-padrao;
+      }
+   }
+
+   .details {
+      margin-bottom: 12px;
+      opacity: 0.4;
+   }
+
+   hr {
+      opacity: 0.1;
+      width: 100%;
+   }
+
+   h2 {
+      font-weight: 300;
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 30px;
+   }
+
+   p {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: .5px;
+      margin: 0 0 30px;
+   }
+}

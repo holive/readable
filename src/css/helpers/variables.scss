@@ -1,0 +1,14 @@
+//button
+$button-color: #808080;
+$button-color-bg-hover: rgba(126, 130, 156, 0.1);
+
+//media queries
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1020px;
+
+$mq-xs: "(min-width:#{$xs})";
+$mq-sm: "(min-width: #{$sm})";
+$mq-md: "(min-width: #{$md})";
+$mq-lg: "(min-width: #{$lg})";

@@ -1,0 +1,36 @@
+.comment {
+   margin-bottom: 2px;
+
+   .title {
+      padding: 10px 0;
+      font-weight: 300;
+      font-size: 18px;
+   }
+
+   p {
+      margin: 0 0 15px;
+      font-size: 15px;
+   }
+
+   .details {
+      font-size: 13px;
+   }
+}
+
+.overlay.comment .author {
+   width: 100%;
+}
+
+.post .add-comment {
+   color: $button-color;
+   margin: 15px 0 60px;
+
+   &:hover {
+      background-color: $button-color-bg-hover;
+   }
+
+   svg {
+      position: relative;
+      left: -4px;
+   }
+}
